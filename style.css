@@ -1,77 +1,56 @@
 body {
-    background-color:cornsilk;
-   }
-   #header {
-     margin: 5px;;
-     width:500px;
-     font-family:Arial, Helvetica, sans-serif;
-     background-color: black;
-   }
- .MENU li a{
-   text-decoration: none;
-   color: rgb(223, 44, 230);
-   font-family: Courier New;
- }
- .MENU li ul li{
-   margin-left: 0px;
- } 
- .MENU1>li{
-   font-weight: 300;
-   list-style:square;
- }
- .MENU1>li>a:hover{
-   color: red;
-   margin-left: 20px;
- }
- .MENU>li>a:hover{
-   color: green;
-   margin-left: 20px;
- 
- }
- .MENU>li{
-   list-style:none;
-   width: 200px;
-   height: 20px;
-   overflow: hidden;
-   font-weight: 600;
-   transition: 2s;
- }
- .MENU>li:hover{
-   height: auto;
- }
- .tot{
-   background-color: #ccc;
-   overflow: hidden;
-   width: 250px;
-   
- }
- .CAIXA1 {
-   width: 415px;
-   height: 250px;
-   margin-bottom: auto;
-   background: red;
-   font-size: 20px;
-   text-align: center;
-   line-height: 10px;
-  float: left;
- }
- .CAIXA2 {
-   width: 415px;
-   height: 250px;
-   margin-bottom: auto;
-   background: green;
-   font-size: 20px;
-   text-align: center;
-   line-height: 10px;
-  float: left;
- }
- .CAIXA3 {
-   width: 415px;
-   height: 250px;
-   margin-bottom: auto;
-   background:blue;
-   font-size: 20px;
-   text-align: center;
-   line-height: 10px;
-  float: left;
+    font-family: 'Raleway', sans-serif;
+}
+/*Al contenedor de nuestro menu le damos un ancho*/
+nav {
+    width: 210px;
+}
+/*Al ser <ul> la etiqueta padre de la lista cambiará los valores de margin
+y padding de sus hijos, así como tambien el estilo de lista*/
+ul{
+    /*outline: 1px solid black;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+/*La etiqueta <li> nos ayudará a darle el color de fondo a su hijo, la etiqueta <a>*/
+li {
+    /*outline: 1px solid black;*/
+    background: #e7e7e5;
+}
+/*Utilizaremos la pseudoclase "hover" para cambiar el color del backgraund cuando pasa el cursor*/
+a:hover {
+    background: #e0e0d1;
+}
+/*Utilizaremos la pseudoclase "active" para cambiar el color del backgraund cuando hacemos click*/
+a:active {
+    background: #333;
+    color: #fff;
+}
+/*Usaremos la etiqueta <a> para cambiar la decoracion del texto y el tipo de elemento
+ que es, tambien le daremos color al texto y el relleno que necesite*/
+a {
+    /*outline: 1px solid black;*/
+    display: block;
+    text-decoration: none;
+    color: black; 
+    padding: 10px;
+    padding-left: 20px;     
+}
+/*Con el pseudoclase "first-child" le daremos color de fondo solo al primer hijo de la etiueta <li>*/
+ul li:first-child {
+    background: #ffc107;
+}
+/*Con el pseudoclase "first-child" le daremos color al texto de la etiqueta <a>*/
+ul li:first-child a{
+   color: white;
+}
+/*Con el pseudoclase "first-child" le daremos color al texto que saldrá al pasar el puntero sobre ella*/
+ul li:first-child a:hover{
+    color: black;
+}
+/*Con el pseudoclase "first-child" le daremos color al texto que saldrá al hacer click con el puntero*/
+ul li:first-child a:active {
+    color: white;
  }
