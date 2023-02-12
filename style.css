@@ -2,15 +2,15 @@
     *{margin:0;padding:0;box-sizing:border-box;font-size:0;}
             
     nav a{
-        text-decoration:none;
-        color:inherit;
-        font-size:14px;
+        text-decoration:ghostwhite;
+        color:red;
+        font-size:20px;
         } 
         nav li{
         display:inline-block;
-        width:10%;
-        padding:5px 10px;
-        background-color:#ea1010;
+        width:20%;
+        padding:10px 10px;
+        background-color:#10ea3f;
         border:1px solid #000;
         text-align:center;
         color:#fff;
