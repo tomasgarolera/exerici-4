@@ -1,56 +1,29 @@
-body {
-    font-family: 'Raleway', sans-serif;
-}
-/*Al contenedor de nuestro menu le damos un ancho*/
-nav {
-    width: 210px;
-}
-/*Al ser <ul> la etiqueta padre de la lista cambiará los valores de margin
-y padding de sus hijos, así como tambien el estilo de lista*/
-ul{
-    /*outline: 1px solid black;*/
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    line-height: 20px;
-}
-/*La etiqueta <li> nos ayudará a darle el color de fondo a su hijo, la etiqueta <a>*/
-li {
-    /*outline: 1px solid black;*/
-    background: #e7e7e5;
-}
-/*Utilizaremos la pseudoclase "hover" para cambiar el color del backgraund cuando pasa el cursor*/
-a:hover {
-    background: #e0e0d1;
-}
-/*Utilizaremos la pseudoclase "active" para cambiar el color del backgraund cuando hacemos click*/
-a:active {
-    background: #333;
-    color: #fff;
-}
-/*Usaremos la etiqueta <a> para cambiar la decoracion del texto y el tipo de elemento
- que es, tambien le daremos color al texto y el relleno que necesite*/
-a {
-    /*outline: 1px solid black;*/
-    display: block;
-    text-decoration: none;
-    color: black; 
-    padding: 10px;
-    padding-left: 20px;     
-}
-/*Con el pseudoclase "first-child" le daremos color de fondo solo al primer hijo de la etiueta <li>*/
-ul li:first-child {
-    background: #ffc107;
-}
-/*Con el pseudoclase "first-child" le daremos color al texto de la etiqueta <a>*/
-ul li:first-child a{
-   color: white;
-}
-/*Con el pseudoclase "first-child" le daremos color al texto que saldrá al pasar el puntero sobre ella*/
-ul li:first-child a:hover{
-    color: black;
-}
-/*Con el pseudoclase "first-child" le daremos color al texto que saldrá al hacer click con el puntero*/
-ul li:first-child a:active {
-    color: white;
- }
+/*farem servir la propietat inline-block i float*/
+/* definicions
+    display= https://developer.mozilla.org/es/docs/Web/CSS/display
+     block: fa que el comportament de l'element sigui com a bloc.
+     inline: l'element es renderitzarà en línia amb altres elements.
+     inline-block: l'element tindrà un comportament barreja entre els dos anteriors.  
+    inherit= https://developer.mozilla.org/es/docs/Web/CSS/inherit 
+    float= és una propietat de posicionament en CSS, és a dir, com s'ubiquen els elements dins d'un document HTML. */
+    *{margin:0;padding:0;box-sizing:border-box;font-size:0;}
+            
+    nav a{
+        text-decoration:none;
+        color:inherit;
+        font-size:14px;
+        } 
+        nav li{
+        display:inline-block;
+        width:10%;
+        padding:5px 10px;
+        background-color:#ea1010;
+        border:1px solid #000;
+        text-align:center;
+        color:#fff;
+        }
+        nav li:hover{
+        background-color:#fff;
+        color:#000;
+        }
+    
