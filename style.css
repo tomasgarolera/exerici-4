@@ -1,11 +1,4 @@
-/*farem servir la propietat inline-block i float*/
-/* definicions
-    display= https://developer.mozilla.org/es/docs/Web/CSS/display
-     block: fa que el comportament de l'element sigui com a bloc.
-     inline: l'element es renderitzarà en línia amb altres elements.
-     inline-block: l'element tindrà un comportament barreja entre els dos anteriors.  
-    inherit= https://developer.mozilla.org/es/docs/Web/CSS/inherit 
-    float= és una propietat de posicionament en CSS, és a dir, com s'ubiquen els elements dins d'un document HTML. */
+
     *{margin:0;padding:0;box-sizing:border-box;font-size:0;}
             
     nav a{
