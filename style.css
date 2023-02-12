@@ -1,22 +1,45 @@
-
-    *{margin:0;padding:0;box-sizing:border-box;font-size:0;}
-            
-    nav a{
-        text-decoration:ghostwhite;
-        color:red;
-        font-size:20px;
-        } 
-        nav li{
-        display:inline-block;
-        width:20%;
-        padding:10px 10px;
-        background-color:#10ea3f;
-        border:1px solid #000;
-        text-align:center;
-        color:#fff;
-        }
-        nav li:hover{
-        background-color:#fff;
-        color:#000;
-        }
-    
+body {
+    background-color:cornsilk;
+   }
+   #header {
+     margin: 5px;;
+     width:500px;
+     font-family:Arial, Helvetica, sans-serif;
+     background-color: black;
+   }
+ .MENU li a{
+   text-decoration: none;
+   color: rgb(223, 44, 230);
+   font-family: Courier New;
+ }
+ .MENU li ul li{
+   margin-left: 0px;
+ } 
+ .MENU1>li{
+   font-weight: 300;
+   list-style:square;
+ }
+ .MENU1>li>a:hover{
+   color: red;
+   margin-left: 20px;
+ }
+ .MENU>li>a:hover{
+   color: green;
+   margin-left: 20px;
+ 
+ }
+ .MENU>li{
+   list-style:none;
+   width: 200px;
+   height: 20px;
+   overflow: hidden;
+   font-weight: 600;
+   transition: 2s;
+ }
+ .MENU>li:hover{
+   height: auto;
+ }
+ .tot{
+   background-color: #ccc;
+   overflow: hidden;
+   width: 250px;
