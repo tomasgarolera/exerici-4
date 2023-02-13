@@ -1,24 +1,90 @@
-*{margin:0;padding:0;box-sizing:border-box;font-size:0;}
-            
-nivell1 
-    nivell1 lu{
-        display:ruby-base-container;
-    }
-    a{
-    text-decoration:none;
-    color:navy;
-    font-size:14px;
-    } 
-    nav li{
-    display:inline-block;
-    width:10%;
-    padding:5px 10px;
-    background-color:#ea1010;
-    border:1px solid #000;
-    text-align:center;
-    color:#fff;
-    }
-    nav li:hover{
-    background-color:#e0e993;
-    color:#361a1a;
-    }
+* {
+    margin: 0px;
+    padding: 0px; 
+    outline: 0;
+}
+
+#menu {
+    text-align: center;
+    font-size: 0.7em;
+    width: 600px;
+    margin: 20px auto;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    width: 162px;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: solid 1px white;
+    padding: 8px;
+    position: relative;
+}
+
+#menu ul li ul li a {
+    width: 160px;
+    padding: 8px 0px;
+    border-top-color: transparent;
+}
+
+#menu ul li ul {
+    display: none;
+}
+
+/* PROPIETATS ESPECÍFIQUES */
+
+#menu ul li ul li ul li a.primera {
+    border-top-color: white;
+}
+
+#menu ul li.nivel1 { 
+    float: left;
+    margin-right: 1px;
+}
+
+#menu ul li a.nivel2 {
+    color: black;
+}
+
+#menu ul li a.nivel1, #menu ul li a.nivel2 {
+    display: block;
+    position: relative;
+}
+
+/* PROPIETAT HOVER */
+
+#menu ul li:hover {
+    position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+    background-color: orange;
+    color: black;
+    position: relative;
+}
+
+#menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
+    display: block;
+    position: absolute;left: 0px;
+}
+
+#menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
+    display: block;
+    position: absolute;
+    left: 161px;
+    top:0px;
+}
+
+#menu ul li ul li a:hover {
+    border-top-color: black;
+    position: relative;
+}
