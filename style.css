@@ -46,16 +46,16 @@
     border-top-color: white;
 }
 
-#menu ul li.nivel1 { 
+#menu ul li.nivell1 { 
     float: left;
     margin-right: 1px;
 }
 
-#menu ul li a.nivel2 {
+#menu ul li a.nivell2 {
     color: black;
 }
 
-#menu ul li a.nivel1, #menu ul li a.nivel2 {
+#menu ul li a.nivell1, #menu ul li a.nivell2 {
     display: block;
     position: relative;
 }
@@ -66,18 +66,18 @@
     position: relative;
 }
 
-#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+#menu ul li a:hover, #menu ul li:hover a.nivell1 {
     background-color: orange;
     color: black;
     position: relative;
 }
 
-#menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
+#menu ul li:hover  ul.nivell2, #menu ul li a:hover  ul.nivell2{
     display: block;
     position: absolute;left: 0px;
 }
 
-#menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
+#menu ul li ul li a:hover ul.nivell3, #menu ul li ul li:hover ul.nivell3 {
     display: block;
     position: absolute;
     left: 161px;
