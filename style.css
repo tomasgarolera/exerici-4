@@ -1,91 +1,90 @@
  {
-    margin: 0px;
-    padding: 0px; 
-    outline: 0;
-}
-
-#menu {
-    text-align: center;
-    font-size: 0.7em;
-    width: 600px;
-    margin: 20px auto;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-#menu ul {
-    list-style-type: none;
-}
-
-#menu ul li {
-    width: 162px;
-}
-
-#menu ul li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    background-color: red;
-    border: solid 1px white;
-    padding: 8px;
-    position: relative;
-}
-
-#menu ul li ul li a {
-    width: 160px;
-    padding: 8px 0px;
-    border-top-color: transparent;
-}
-
-#menu ul li ul {
-    display: none;
-}
-
-/* PROPIETATS ESPECÍFIQUES */
-
-#menu ul li ul li ul li a.primera {
-    border-top-color: white;
-}
-
-#menu ul li.nivell1 { 
-    float: left;
-    margin-right: 1px;
-}
-
-#menu ul li a.nivell2 {
-    color: black;
-}
-
-#menu ul li a.nivell1, #menu ul li a.nivell2 {
-    display: block;
-    position: relative;
-}
-
-/* PROPIETAT HOVER */
-
-#menu ul li:hover {
-    position: relative;
-}
-
-#menu ul li a:hover, #menu ul li:hover a.nivell1 {
-    background-color: orange;
-    color: black;
-    position: relative;
-}
-
-#menu ul li:hover  ul.nivell2, #menu ul li a:hover  ul.nivell2{
-    display: block;
-    position: absolute;left: 0px;
-}
-
-#menu ul li ul li a:hover ul.nivell3, #menu ul li ul li:hover ul.nivell3 {
-    display: block;
-    position: absolute;
-    left: 161px;
-    top:0px;
-}
-
-#menu ul li ul li a:hover {
-    border-top-color: black;
-    position: relative;
-}
->>>>>>> 56136e924b54c2c094a8cc204555c75d75397cc1
+    * {
+        margin: 0px;
+        padding: 0px; 
+        outline: 0;
+    }
+    
+    #menu {
+        text-align: center;
+        font-size: 0.7em;
+        width: 540px;
+        margin: 20px auto;
+    }
+    
+    #menu ul {
+        list-style-type: none;
+    }
+    
+    #menu ul li {
+        width: 162px;
+    }
+    
+    #menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(59,93,148,1);
+        border: solid 1px #fff;
+        padding: 8px;
+        position: relative;
+    }
+    
+    #menu ul li ul li a {
+        width: 160px;
+        padding: 8px 0px;
+        border-top-color: transparent;
+    }
+    
+    #menu ul li ul {
+        display: none;
+    }
+    
+    /* PROPIEDADES ESPECÍFICAS */
+    
+    #menu ul li ul li ul li a.primera {
+        border-top-color: #fff;
+    }
+    
+    #menu ul li.nivel1 { 
+        float: left;
+        margin-right: 1px;
+    }
+    
+    #menu ul li a.nivel2 {
+        color: #000;
+    }
+    
+    #menu ul li a.nivel1, #menu ul li a.nivel2 {
+        display: block;
+        position: relative;
+    }
+    
+    /* PROPIEDAD HOVER */
+    
+    #menu ul li:hover {
+        position: relative;
+    }
+    
+    #menu ul li a:hover, #menu ul li:hover a.nivel1 {
+        background-color: #6CC;
+        color: #000;
+        position: relative;
+    }
+    
+    #menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
+        display: block;
+        position: absolute;left: 0px;
+    }
+    
+    #menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
+        display: block;
+        position: absolute;
+        left: 161px;
+        top:0px;
+    }
+    
+    #menu ul li ul li a:hover {
+        border-top-color: #000;
+        position: relative;
+    }
